@@ -21,6 +21,19 @@ class EmployeeComponent extends React.Component{
             <div>
                 <h1 className= "text-center">Employee List</h1>
                 <table className = "table table-striped">
+                <thead>
+                        <tr>
+                            <td>Employee ID</td>
+                            <td>
+                                First Name
+                            </td>
+                            <td>Last Name</td>
+                            <td>Department</td>
+                            <td>Contact Number</td>
+                            <td>Salary</td>
+                            <td>Hire Date</td>
+                        </tr>
+                    </thead>
                   <tbody>
                     {
                         this.state.employees.map(
